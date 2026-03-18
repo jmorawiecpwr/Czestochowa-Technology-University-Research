@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
+#zabawa tkinterem, nic ciekawego :/
+
 class DataApp:
     def __init__(self, root):
         self.root = root
@@ -18,7 +20,6 @@ class DataApp:
         self.sort_button = tk.Button(root, text="Sortuj dane", command=self.sort_data, state=tk.DISABLED)
         self.sort_button.pack(pady=10)
 
-        # Przycisk wyświetl wykres
         self.plot_button = tk.Button(root, text="Wyświetl wykres", command=self.plot_data, state=tk.DISABLED)
         self.plot_button.pack(pady=10)
 
